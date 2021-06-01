@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Stripe Checkout Sample</title>
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/global.css" />
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="./index.js" defer></script> <!--https://www.w3schools.com/tags/att_script_defer.asp -->
+  </head>
+
+  <body>
+    <section class="container">
+      <div class="donation">
+          <label class="donation">Donation (optional):</label>
+          <input type="number" min=0 id="donation" name="donation">
+      </div>
+      <button id="submit">Buy</button>
+    </section>
+
+    <div id="error-message"></div>
+  </body>
+</html>
